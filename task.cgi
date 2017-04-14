@@ -86,8 +86,8 @@ my $input = @_;
 my $date = $input[0];
 my $time = $input[1];
 my $desription = $input[2];
-my $today = strftime "%Y-%m-%d_%H-%M-%S", localtime;
-my $input_date = strftime "%Y-%m-%d_%H-%M-%S", $date;
+my $today = strftime "%Y-%m-%d_%H-%M", localtime;
+my $input_date = strftime "%Y-%m-%d_%H-%M", $date;
 
 if ($today ge $date || !($date) || !($time) || !($description)){
 return undef;
